@@ -39,6 +39,7 @@ class PlayerToggleSprintEvent extends PlayerEvent implements Cancellable{
 		$this->player = $player;
 		$this->isSprinting = (bool) $isSprinting;
 	}
+	
 
 	public function isSprinting(){
 		return $this->isSprinting;

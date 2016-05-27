@@ -26,8 +26,8 @@ after_success:
 - git config --global user.name "Travis CI"
 - mv ImagicalCorp keithkfng
 - git clone --branch=gh-pages https://github.com/lolcraftboy14/ImagicalMine/
-- cp /home/travis/build/lolcraftboy14/ImagicalMine/plugins/DevTools//ImagicalMine_1.4.phar /home/travis/build/ImagicalMine/ImagicalMine-$TRAVIS_JOB_ID.phar
-- cp /home/travis/build/lolcraftboy14/ImagicalMine/plugins/DevTools//ImagicalMine_1.4.phar /home/travis/build/ImagicalMine/service-download/ImagicalMine.phar
+- cp /home/travis/build/nethercube/nethercube-a-fork-of-ImagicalMine/plugins/DevTools//ImagicalMine_1.4.phar /home/travis/build/ImagicalMine/ImagicalMine-$TRAVIS_JOB_ID.phar
+- cp /home/travis/build/nethercube/nethercube-a-fork-of-ImagicalMine/plugins/DevTools//ImagicalMine_1.4.phar /home/travis/build/ImagicalMine/service-download/ImagicalMine.phar
 - cd ImagicalMine
 - git add ImagicalMine-$TRAVIS_JOB_ID.phar
 - git add service-download/ImagicalMine.phar
@@ -36,7 +36,7 @@ after_success:
 - echo >> list.txt
 - echo "This is a directory listing of the root directory of the release download website. Copy the file name and paste it in the URL bar after deleting \"list.txt\". You can also alternatively download files using a shell script by downloading the file from http://imagicalcorp.github.io/ImagicalMine/service-download/ImagicalMine.phar" >> list.txt
 - git commit -am "Added latest build"
-- git push https://github.com/lolcraftboy14/ImagicalMine/tree/gh-pages
+- git push https://github.com/nethercube/nethercube-a-fork-of-ImagicalMine/tree/gh-pages
 #- cd /home/travis/build/keithkfng/ImagicalMine
 
 # GITHUB RELEASES CONFIGURATION
